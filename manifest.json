@@ -1,0 +1,10 @@
+{
+	"id": "soft-breaks",
+	"name": "Soft Breaks",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "This plugins inserts newlines (soft breaks) past a certain column.",
+	"author": "biquando",
+	"authorUrl": "https://github.com/biquando",
+	"isDesktopOnly": false
+}
