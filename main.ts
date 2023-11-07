@@ -58,15 +58,16 @@ export default class SoftBreaks extends Plugin {
                 for (let l = 0; l < editor.lineCount(); l++) {
                     const rawLine = editor.getLine(l);
                     let line = rawLine;
-                    if (line.length <= COL) {
-                        continue;
-                    }
 
                     // check for ``` to change inCodeBlock
                     if (/^\s*```/.test(line)) {
                         inCodeBlock = !inCodeBlock;
                     }
                     if (inCodeBlock) {
+                        continue;
+                    }
+
+                    if (line.length <= COL) {
                         continue;
                     }
 
